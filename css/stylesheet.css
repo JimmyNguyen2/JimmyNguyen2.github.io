@@ -2,13 +2,16 @@ body {
 	font:0.8em Arial, sans-serief;
 	color:#535353;
 }
+
 h1, ul{
 	margin:0;
 	padding:0;
 }
+
 .clear{
 	clear: both;
 }
+
 #wrap {
 	
 	width:960px;
@@ -19,30 +22,82 @@ h1, ul{
 #header {
 	margin-bottom:10px;
 }
+
 .backgroundcolor{
 	background:#aaa;
 }
-#menu ul {
-	list-style:none;
-	height: 30px;
-	
-	border-bottom:1px solid #000;
-}
-#menu ul li{
-	float: left;
+
+#top_nav li:hover ul{
+	display:block;
 }
 
-#menu ul li a{
-	color:#000;
-	text-decoration:none;	
+#top_nav{
 	display:block;
-	padding: 0 20px; <!-- add padding between items in menu -->
-	line-height:30px;
+	position:relative;
+	background-image:{nav_normal.png};
+	border: 1px solid rgb(200,150,0);
+	font:bold 16px Sans-serif;
+	height: 21px;
+	width:960px;
+	margin:0px auto;/*center the navigation bar*/
 }
-<!--#menu ul li a:hover , #menu ul li a.selected{
-	background:#aaa;
+
+#top_nav ul{
+	margin:0px;
+	padding:0px;
+}
+
+#top_nav li{
+	position:relative;
+	float:left;
+	list-style-type:none;
+}
+
+#top_nav ul:after{
+	content:"."; /*add a full stop at the end of submenu */
+	display:block;
+	height:0px;
+	clear:both;
+	visibility:hidden;/*hide full stop */
+}
+
+#top_nav li a{
+	text-decoration:none;
+	displayed:block;
 	color:#535353;
-} -->
+	border-right:1px solid rgb(230,100,0);
+	padding:0px 25px;
+}
+
+#top_nav ul ul {
+	position:absolute;
+	display:none;
+	left:0px;	
+	background-color: #5CB85C; /*rgb(250,150,0);*/
+}
+
+#top_nav ul ul li{
+	border:1px solid rgb(230,100,0);
+	border-top: none;/*Remove the double border line in drop down menu */
+	width:99%;
+}
+
+#top_nav ul ul li a{
+	border-right:none;
+	font:bold 14px Sans-serif;
+}
+#top_nav li a:hover{
+	color:red;
+}
+
+#top_nav li:hover{
+	background-image:url(nav_hover.png);
+}
+
+#top_nav ul ul li:hover{
+	background-image:none;
+}
+
 #content{	 
 	width:690px;
 	float:left;
@@ -57,21 +112,26 @@ h1, ul{
 	border-left:1px solid #aaa;
 	min-height:300px;
 }
-#content, side{
+
+#content{
 	min-height:200px;
 }
+
 a{
 	text-decoration:none;
 }
+
 a:hover, a.selected{
-	background:#ccc;
+	/*background:#ccc;*/
 	text-decoration:underline;
-	color:#aaa;
-	font-size:1.5em;
+	/*color:#aaa;*/
+	font-size:1.1em;
 }
+
 a:visited{
 	color:blue;
 }
+
 #footer{
 	background:#aaa;
 	color:#aaa;
