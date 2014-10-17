@@ -65,8 +65,8 @@ h1, ul{
 	text-decoration:none;
 	displayed:block;
 	color:#535353;
-	border-right:1px solid rgb(230,100,0);
-	padding:0px 25px;
+	/*border-right:1px solid rgb(230,100,0); remove the verticle line between each item on menu bar*/
+	padding:0px 25px; 
 }
 
 #top_nav ul ul {
@@ -125,7 +125,7 @@ a:hover, a.selected{
 	/*background:#ccc;*/
 	text-decoration:underline;
 	/*color:#aaa;*/
-	font-size:1.1em;
+	font-size:1em;/*If increase size, it will cause Hobbies to drop to the next line */
 }
 
 a:visited{
