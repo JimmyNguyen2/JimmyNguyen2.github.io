@@ -73,7 +73,7 @@ h1, ul{
 	position:absolute;
 	display:none;
 	left:0px;	
-	background-color: #5CB85C; /*rgb(250,150,0);*/
+	background-color: #d0b79e; /*rgb(250,150,0); hover menu background*/
 }
 
 #top_nav ul ul li{
@@ -87,7 +87,7 @@ h1, ul{
 	font:bold 14px Sans-serif;
 }
 #top_nav li a:hover{
-	color:red;
+	color:#6f1d32;
 }
 
 #top_nav li:hover{
@@ -119,17 +119,18 @@ h1, ul{
 
 a{
 	text-decoration:none;
+	color:black;
 }
 
 a:hover, a.selected{
 	/*background:#ccc;*/
-	text-decoration:underline;
-	/*color:#aaa;*/
+	text-decoration:none;
+	color:#d3d4d4;
 	font-size:1em;/*If increase size, it will cause Hobbies to drop to the next line */
 }
 
 a:visited{
-	color:blue;
+	color:#895741;
 }
 
 #footer{
