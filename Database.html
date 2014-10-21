@@ -51,11 +51,34 @@
 					Source: <strong>
 					<a href="http://www.utteraccess.com/wiki/index.php/Foreign_Key">http://www.utteraccess.com</a></strong><HR/>
 					
+					DATA VALIDATION: A set of constraints or rules that help control how data is entered into a field.
+					<ul>
+						<li>Required Field: Sets the required property of a field to force data entry, such as a last name.</li>
+						<li>Lookup Lists: Forces users to pick from the list</li>
+						<li>Multiple Value Fields: Accept multiple values in a single field.</li>
+						<li>Default Value: Specify a value that is automatically entered in a field.</li>
+						<li>Validation rule: Limit the type of data user can enter into a field.</li>
+						<li>Validation Text:Provide error message telling users what they did wrong and how to fix it.</li>
+						<li>Input mask: Forces user to follow a specific data format.</li>
+					</ul><hr>
+					
 					REFERENTIAL INTEGRITY: When it is enforced, you cannot enter a foreign key value in a related table unless the primary key value exists in the primary table.<br/><hr>
 					
-					QUERY: A query enables you to ask questions about the data stored in a database.<br/><hr>
+					QUERY: A query enables you to ask questions about the data stored in a database. To build a query, you need to know the structure of your database, the relationship between the tables. The most common type of query is: Select. Ex: SELECT StudentName FROM Students WHERE LastName ='Nguyen';<br/><hr/>
 					
-					MULTI-TABLE QUERY: It contains two or more tables. It enables you to take advantage of the relationships that have been set in your database.<br><hr><br/>
+					ACTION QUERIES: Add, edit, or delete data in a database.<br/>
+					The picture below shows how to create a simple table in MySQL with 4 columns(emp_id, name, age, salary) initially. <br/>
+					Then 3 records were added. Then a 5th column(address) was added; and the column named: 'salary' was changed to: 'emp_sal'</br>
+					<img src= "images/CreateTable.JPG"  alt= "Create Table"><hr><br/>
+					
+					Now the name "Alex" in column 2 row 3 is changed to Jimmy" and the address column is removed from the employee table</br>
+					<img src="images/Sql_Update.JPG" alt="Update Table"><hr><br/>
+					
+					The image below shows the eror after the select query is run because the table does not exist any more.<br/>
+					<img src="images/Drop_Table.JPG" alt="Drop Table">
+					<hr><br/>
+					
+					MULTI-TABLE QUERY: It contains two or more tables. It enables you to take advantage of the relationships that have been set in your database.<br><hr>
 					
 					INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN:<img src="images/Join_Tables.png"alt="Join tables"><br/>
 					Source: <strong>
