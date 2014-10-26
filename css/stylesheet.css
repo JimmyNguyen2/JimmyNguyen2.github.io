@@ -133,6 +133,10 @@ a:visited{
 	color:#895741;
 }
 
+.indent{
+	margin:2em;
+}
+
 #footer{
 	background:#aaa;
 	color:#aaa;
